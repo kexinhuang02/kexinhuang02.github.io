@@ -437,6 +437,10 @@ img {
     height: 140px;
   }
 
+  .profile-name-row {
+    justify-content: center;
+  }
+
   .profile-links {
     justify-content: center;
   }
