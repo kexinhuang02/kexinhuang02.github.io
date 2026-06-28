@@ -249,6 +249,53 @@ img {
 }
 
 /* ========== Publications ========== */
+.publications-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.publications-header .section-title {
+  margin-bottom: 0;
+}
+
+.pub-filter {
+  display: inline-flex;
+  flex-shrink: 0;
+  gap: 4px;
+  padding: 4px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+
+.pub-filter-button {
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.2;
+  padding: 7px 12px;
+  transition: background var(--transition), color var(--transition), box-shadow var(--transition);
+  white-space: nowrap;
+}
+
+.pub-filter-button:hover {
+  color: var(--color-accent);
+}
+
+.pub-filter-button.is-active {
+  background: var(--color-accent);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(26, 86, 219, 0.18);
+}
+
 .pub-year {
   font-size: 0.9rem;
   font-weight: 700;
@@ -447,6 +494,23 @@ img {
 
   .profile-name {
     font-size: 1.6rem;
+  }
+
+  .publications-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .pub-filter {
+    width: 100%;
+  }
+
+  .pub-filter-button {
+    flex: 1;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
   }
 
   .pub-meta {

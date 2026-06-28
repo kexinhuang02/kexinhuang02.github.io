@@ -93,8 +93,14 @@
   </section>
 
   <!-- ==================== Publications ==================== -->
-  <section class="section">
-    <h2 class="section-title">Publications</h2>
+  <section class="section" id="publications">
+    <div class="publications-header">
+      <h2 class="section-title">Publications</h2>
+      <div class="pub-filter" role="group" aria-label="Publication filter">
+        <button class="pub-filter-button" type="button" data-publication-filter="first-author" aria-pressed="false">First author</button>
+        <button class="pub-filter-button is-active" type="button" data-publication-filter="all" aria-pressed="true">All publications</button>
+      </div>
+    </div>
 
     <!--
       To add a paper: copy the <div class="pub-item">...</div> block below,
@@ -104,7 +110,7 @@
 
     <div class="pub-year">2026</div>
 
-    <div class="pub-item">
+    <div class="pub-item" data-first-author="false">
       <div class="pub-title">Beyond Where to Look: Trajectory-Guided Reinforcement Learning for Multimodal RLVR</div>
       <div class="pub-authors">Jinda Lu, Junkang Wu, Jinghan Li, <span class="me">Kexin Huang</span>, Shuo Yang, Mingzhu Chen, Jiancan Wu, Kuien Liu, Xiang Wang</div>
       <div class="pub-meta">
@@ -115,7 +121,7 @@
       </div>
     </div>
 
-    <div class="pub-item">
+    <div class="pub-item" data-first-author="false">
       <div class="pub-title">Experience Augmented Policy Optimization for LLM Reasoning</div>
       <div class="pub-authors">Jinda Lu, <span class="me">Kexin Huang</span>, Junkang Wu, Shuo Yang, Jinghan Li, Chiyu Ma, Shaohang Wei, Xiang Wang, Guoyin Wang, Jingren Zhou</div>
       <div class="pub-meta">
@@ -126,7 +132,7 @@
       </div>
     </div>
 
-    <div class="pub-item">
+    <div class="pub-item" data-first-author="false">
       <div class="pub-title">One-Way Policy Optimization for Self-Evolving LLMs</div>
       <div class="pub-authors">Shuo Yang, Jinda Lu, <span class="me">Kexin Huang</span>, Chiyu Ma, Shaohang Wei, Yuyang Liu, Guoyin Wang, Jingren Zhou, Li Yuan</div>
       <div class="pub-meta">
@@ -138,7 +144,7 @@
       </div>
     </div>
 
-    <div class="pub-item">
+    <div class="pub-item" data-first-author="false">
       <div class="pub-title">Clipping Bottleneck: Stabilizing RLVR via Stochastic Recovery of Near-Boundary Signals</div>
       <div class="pub-authors">Shuo Yang, Jinda Lu, Chiyu Ma, <span class="me">Kexin Huang</span>, Haoming Meng, Qihui Zhang, Yuyang Liu, Bolin Ding, Guoyin Wang, Li Yuan, Jingren Zhou</div>
       <div class="pub-meta">
@@ -150,7 +156,7 @@
       </div>
     </div>
 
-    <div class="pub-item">
+    <div class="pub-item" data-first-author="false">
       <div class="pub-title">Mitigating Reward Hacking in LLM-based Recommendation: A Preference Optimization Approach</div>
       <div class="pub-authors">Heyu Chen, Junkang Wu, Guoqing Hu, <span class="me">Kexin Huang</span>, Xiang Wang, Jiancan Wu</div>
       <div class="pub-meta">
@@ -161,7 +167,7 @@
       </div>
     </div>
 
-    <div class="pub-item">
+    <div class="pub-item" data-first-author="true">
       <div class="pub-title">Beyond Magnitude: Leveraging Direction of RLVR Updates for LLM Reasoning</div>
       <div class="pub-authors"><span class="me">Kexin Huang</span>, Haoming Meng, Junkang Wu, Jinda Lu, Chiyu Ma, Ziqian Chen, Xue Wang, Bolin Ding, Jiancan Wu, Xiang Wang, Xiangnan He, Guoyin Wang, Jingren Zhou</div>
       <div class="pub-meta">
@@ -173,7 +179,7 @@
       </div>
     </div>
 
-    <div class="pub-item">
+    <div class="pub-item" data-first-author="false">
       <div class="pub-title">Quantile Advantage Estimation for Entropy-Safe Reasoning</div>
       <div class="pub-authors">Junkang Wu, <span class="me">Kexin Huang</span>, Jiancan Wu, An Zhang, Xiang Wang, Xiangnan He</div>
       <div class="pub-meta">
@@ -185,7 +191,7 @@
       </div>
     </div>
 
-    <div class="pub-item">
+    <div class="pub-item" data-first-author="false">
       <div class="pub-title">Sparse but Critical: A Token-Level Analysis of Distributional Shifts in RLVR Fine-Tuning of LLMs</div>
       <div class="pub-authors">Haoming Meng, <span class="me">Kexin Huang</span>, Shaohang Wei, Chiyu Ma, Shuo Yang, Xue Wang, Guoyin Wang, Bolin Ding, Jingren Zhou</div>
       <div class="pub-meta">
@@ -198,7 +204,7 @@
 
     <div class="pub-year">2025</div>
 
-    <div class="pub-item">
+    <div class="pub-item" data-first-author="false">
       <div class="pub-title">RePO: ReLU-based Preference Optimization</div>
       <div class="pub-authors">Junkang Wu, <span class="me">Kexin Huang</span>, Xue Wang, Jinyang Gao, Bolin Ding, Jiancan Wu, Xiangnan He, Xiang Wang</div>
       <div class="pub-meta">
@@ -210,7 +216,7 @@
       </div>
     </div>
 
-    <div class="pub-item">
+    <div class="pub-item" data-first-author="false">
       <div class="pub-title">LaMP-Val: Large Language Models Empower Personalized Valuation in Auction</div>
       <div class="pub-authors">Jie Sun, Tianyu Zhang, Houcheng Jiang, <span class="me">Kexin Huang</span>, Xiang Shu, Zhibo Zhu, Lintao Ma, Xingyu Lu, Jun Zhou, Junkang Wu, Chi Luo, An Zhang, Jiancan Wu, Xiang Wang</div>
       <div class="pub-meta">
@@ -222,7 +228,7 @@
       </div>
     </div>
 
-    <div class="pub-item">
+    <div class="pub-item" data-first-author="true">
       <div class="pub-title">Larger or Smaller Reward Margins to Select Preferences for Alignment?</div>
       <div class="pub-authors"><span class="me">Kexin Huang</span>, Junkang Wu, Ziqian Chen, Xue Wang, Jinyang Gao, Bolin Ding, Jiancan Wu, Xiangnan He, Xiang Wang</div>
       <div class="pub-meta">
@@ -234,7 +240,7 @@
       </div>
     </div>
 
-    <div class="pub-item">
+    <div class="pub-item" data-first-author="true">
       <div class="pub-title">Learning Bayesian Nash Equilibrium in Auction Games via Approximate Best Response</div>
       <div class="pub-authors"><span class="me">Kexin Huang</span>, Ziqian Chen, Xue Wang, Chongming Gao, Jinyang Gao, Bolin Ding, Xiang Wang</div>
       <div class="pub-meta">
@@ -246,7 +252,7 @@
       </div>
     </div>
 
-    <div class="pub-item">
+    <div class="pub-item" data-first-author="false">
       <div class="pub-title">SPRec: Leveraging Self-Play to Debias Preference Alignment for Large Language Model-based Recommendations</div>
       <div class="pub-authors">Chongming Gao, Ruijun Chen, Shuai Yuan, <span class="me">Kexin Huang</span>, Yuanqing Yu, Xiangnan He</div>
       <div class="pub-meta">
@@ -260,7 +266,7 @@
 
     <div class="pub-year">2024</div>
 
-    <div class="pub-item">
+    <div class="pub-item" data-first-author="true">
       <div class="pub-title">Auctionformer: A Unified Deep Learning Algorithm for Solving Equilibrium Strategies in Auction Games</div>
       <div class="pub-authors"><span class="me">Kexin Huang</span>, Ziqian Chen, Xue Wang, Chongming Gao, Jinyang Gao, Bolin Ding, Xiang Wang</div>
       <div class="pub-meta">
@@ -274,7 +280,7 @@
 
     <div class="pub-year">2023</div>
 
-    <div class="pub-item">
+    <div class="pub-item" data-first-author="false">
       <div class="pub-title">Alleviating Matthew Effect of Offline Reinforcement Learning in Recommendation</div>
       <div class="pub-authors">Chongming Gao, <span class="me">Kexin Huang</span>, Jiawei Chen, Yuan Zhang, Biao Li, Peng Jiang, Shiqi Wang, Zhong Zhang, Xiangnan He</div>
       <div class="pub-meta">
@@ -287,7 +293,7 @@
       </div>
     </div>
 
-    <div class="pub-item">
+    <div class="pub-item" data-first-author="false">
       <div class="pub-title">Learn to Explore: on Bootstrapping Interactive Data Exploration with Meta-learning</div>
       <div class="pub-authors">Yukun Cao, Xike Xie, <span class="me">Kexin Huang</span></div>
       <div class="pub-meta">
@@ -365,5 +371,54 @@
   </footer>
 
 </div>
+<script>
+  (function () {
+    var publications = document.getElementById('publications');
+    if (!publications) return;
+
+    var buttons = publications.querySelectorAll('[data-publication-filter]');
+    var items = publications.querySelectorAll('.pub-item');
+    var years = publications.querySelectorAll('.pub-year');
+
+    function updateYears() {
+      years.forEach(function (year) {
+        var hasVisibleItem = false;
+        var node = year.nextElementSibling;
+
+        while (node && !node.classList.contains('pub-year')) {
+          if (node.classList.contains('pub-item') && !node.hidden) {
+            hasVisibleItem = true;
+            break;
+          }
+          node = node.nextElementSibling;
+        }
+
+        year.hidden = !hasVisibleItem;
+      });
+    }
+
+    function applyFilter(filter) {
+      items.forEach(function (item) {
+        item.hidden = filter === 'first-author' && item.dataset.firstAuthor !== 'true';
+      });
+
+      buttons.forEach(function (button) {
+        var isActive = button.dataset.publicationFilter === filter;
+        button.classList.toggle('is-active', isActive);
+        button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+      });
+
+      updateYears();
+    }
+
+    buttons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        applyFilter(button.dataset.publicationFilter);
+      });
+    });
+
+    applyFilter('all');
+  })();
+</script>
 </body>
 </html>
